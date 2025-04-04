@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Denied</title>
+    <link rel="icon" type="image/png" href="media/discord-logo-0.webp">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .glitch-container {
+            position: relative;
+        }
+
+        .glitch {
+            font-size: 3em;
+            font-weight: bold;
+            text-transform: uppercase;
+            position: relative;
+            text-shadow: 0.05em 0 0 #ff0000, -0.05em -0.025em 0 #0000ff;
+            animation: glitch 725ms infinite;
+        }
+
+        .subtitle {
+            color: #ff0000;
+            margin-top: 20px;
+            font-size: 1.5em;
+            opacity: 0.8;
+        }
+
+        .message {
+            color: #ffffff;
+            margin-top: 30px;
+            font-size: 1.2em;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .binary {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            opacity: 0.1;
+            font-size: 1.2em;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        @keyframes glitch {
+            0% {
+                text-shadow: 0.05em 0 0 #ff0000, -0.05em -0.025em 0 #0000ff;
+            }
+            14% {
+                text-shadow: 0.05em 0 0 #ff0000, -0.05em -0.025em 0 #0000ff;
+            }
+            15% {
+                text-shadow: -0.05em -0.025em 0 #ff0000, 0.025em 0.025em 0 #0000ff;
+            }
+            49% {
+                text-shadow: -0.05em -0.025em 0 #ff0000, 0.025em 0.025em 0 #0000ff;
+            }
+            50% {
+                text-shadow: 0.025em 0.05em 0 #ff0000, 0.05em 0 0 #0000ff;
+            }
+            99% {
+                text-shadow: 0.025em 0.05em 0 #ff0000, 0.05em 0 0 #0000ff;
+            }
+            100% {
+                text-shadow: -0.025em 0 0 #ff0000, -0.025em -0.025em 0 #0000ff;
+            }
+        }
+
+        .back-button {
+            margin-top: 40px;
+            padding: 10px 20px;
+            background: #ff0000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-family: 'Courier New', monospace;
+            font-size: 1em;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            background: #cc0000;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="binary"></div>
+    <div class="glitch-container">
+        <div class="glitch">Access Denied</div>
+    </div>
+    <div class="subtitle">SECURITY ALERT</div>
+    <div class="message">Sorry kiddo, but you cannot go there.</div>
+    <a href="/" class="back-button">Return to Safety</a>
+
+    <script>
+        // Create binary rain effect
+        function createBinaryRain() {
+            const binary = document.querySelector('.binary');
+            const characters = '01';
+            let rain = '';
+            
+            for (let i = 0; i < 2000; i++) {
+                rain += characters.charAt(Math.floor(Math.random() * characters.length));
+            }
+            
+            binary.textContent = rain;
+        }
+
+        setInterval(createBinaryRain, 50);
+
+        // Prevent right-click
+        document.addEventListener('contextmenu', e => e.preventDefault());
+
+        // Redirect all paths to this 404 page
+        if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') {
+            window.location.href = '/404.html';
+        }
+    </script>
+</body>
+</html> 

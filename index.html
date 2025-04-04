@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E13's Home</title>
+    <link rel="icon" type="image/gif" href="media/a_1b6fb695fed530dfecae8f286cf37729.gif">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="hacker-overlay" style="display: none;">
+        <div class="hacker-terminal">
+            <div class="terminal-header">
+                <span class="terminal-title">SYSTEM ALERT</span>
+                <div class="terminal-buttons">
+                    <span class="terminal-button red"></span>
+                    <span class="terminal-button yellow"></span>
+                    <span class="terminal-button green"></span>
+                </div>
+            </div>
+            <div class="terminal-content">
+                <div class="ascii-art">
+                    ▄▄▄█████▓▓█████  ██▀███   ███▄ ▄███▓ ██▓ ███▄    █  ▄▄▄     ▄▄▄█████▓▓█████ ▓█████▄ 
+                    ▓  ██▒ ▓▒▓█   ▀ ▓██ ▒ ██▒▓██▒▀█▀ ██▒▓██▒ ██ ▀█   █ ▒████▄   ▓  ██▒ ▓▒▓█   ▀ ▒██▀ ██▌
+                    ▒ ▓██░ ▒░▒███   ▓██ ░▄█ ▒▓██    ▓██░▒██▒▓██  ▀█ ██▒▒██  ▀█▄ ▒ ▓██░ ▒░▒███   ░██   █▌
+                    ░ ▓██▓ ░ ▒▓█  ▄ ▒██▀▀█▄  ▒██    ▒██ ░██░▓██▒  ▐▌██▒░██▄▄▄▄██░ ▓██▓ ░ ▒▓█  ▄ ░▓█▄   ▌
+                      ▒██▒ ░ ░▒████▒░██▓ ▒██▒▒██▒   ░██▒░██░▒██░   ▓██░ ▓█   ▓██▒ ▒██▒ ░ ░▒████▒░▒████▓ 
+                      ▒ ░░   ░░ ▒░ ░░ ▒▓ ░▒▓░░ ▒░   ░  ░░▓  ░ ▒░   ▒ ▒  ▒▒   ▓▒█░ ▒ ░░   ░░ ▒░ ░ ▒▒▓  ▒ 
+                </div>
+                <div class="terminal-line error">[!] ACCESS DENIED [!]</div>
+                <div class="terminal-line">[*] Initializing security protocols...</div>
+                <div class="terminal-line warning">[!] Unauthorized inspection attempt detected</div>
+                <div class="terminal-line system">[SYSTEM] > Tracing connection...</div>
+                <div class="terminal-line error">[ALERT] > Source code access prohibited</div>
+                <div class="terminal-line system">[SYSTEM] > Logging security breach...</div>
+                <div class="terminal-line warning">[!] Security countermeasures activated</div>
+                <div class="terminal-line system">[SYSTEM] > Connection terminated</div>
+                <div class="terminal-prompt">
+                    <span class="prompt-user">root@system</span>:<span class="prompt-location">~</span>$ <span class="typing-text">exit</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <video class="background-video" autoplay muted loop playsinline>
+        <source src="media/beaa6539-a354-4384-baed-bd6d59d2ac2f.mp4" type="video/mp4">
+    </video>
+
+    <div class="music-control hidden">
+        <div class="music-icon">
+            <i class="fas fa-heartbeat"></i>
+        </div>
+        <div class="music-trigger">
+            <div class="soundbars">
+                <div class="soundbar"></div>
+                <div class="soundbar"></div>
+                <div class="soundbar"></div>
+                <div class="soundbar"></div>
+                <div class="soundbar"></div>
+            </div>
+            <img src="media/artworks-EqSi6HpZFGGN-0-t1080x1080.webp" alt="Album Art" class="album-art">
+            <span class="song-title">DILEMMA</span>
+            <button class="play-pause-btn">
+                <i class="fas fa-pause"></i>
+            </button>
+            <button class="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="music-popup">
+            <div class="popup-content">
+                <div class="song-info">
+                    <img src="media/artworks-EqSi6HpZFGGN-0-t1080x1080.webp" alt="Album Art" class="popup-album-art">
+                    <div class="track-details">
+                        <span class="track-title">DILEMMA</span>
+                        <span class="track-artist">NEMZZZ, CENTRAL CEE</span>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="volume-control">
+                    <i class="fas fa-volume-up"></i>
+                    <input type="range" class="volume-slider" min="0" max="100" value="50">
+                </div>
+                <audio id="audio-player" src="media/NEMZZZ - DILEMMA (FEAT. CENTRAL CEE) [OFFICIAL AUDIO].mp3"></audio>
+            </div>
+        </div>
+    </div>
+
+    <!-- Landing Page -->
+    <div class="landing-page">
+        <div class="enter-button">
+            <span class="glow-text">Click to Enter</span>
+        </div>
+    </div>
+
+    <!-- Biolink Page -->
+    <div class="biolink-page">
+        <div class="content-wrapper">
+            <div class="content-box">
+                <div class="banner">
+                    <img src="media/5724-late-night-pfpsgg.gif" alt="Banner" class="banner-image">
+                    <div class="view-counter">
+                        <i class="fas fa-eye"></i>
+                        <span class="view-count" id="viewCount">0</span>
+                        <span class="view-label">views</span>
+                    </div>
+                </div>
+                
+                <div class="profile-section">
+                    <img src="media/5088-cat-money-pfpsgg.webp" alt="Profile Picture" class="profile-picture">
+                    <div class="username-wrapper">
+                        <h1 class="username">E13</h1>
+                        <span class="sparkle">✦</span>
+                        <span class="sparkle">✧</span>
+                        <span class="sparkle">⋆</span>
+                        <span class="sparkle">✦</span>
+                    </div>
+                    <p class="bio"></p>
+                    
+                    <div class="social-icons">
+                        <a href="https://discord.com/users/1278980523578101775" class="social-icon" target="_blank">
+                            <img src="media/discord-logo-0.webp" alt="Discord">
+                            <span class="icon-label">My discord main →</span>
+                        </a>
+                    </div>
+
+                    <div class="discord-widget">
+                        <a href="https://discord.gg/E13Services" class="discord-server-preview" target="_blank">
+                            <div class="discord-server-icon">
+                                <img src="media/a_1b6fb695fed530dfecae8f286cf37729.gif" alt="Server Icon" class="server-icon-img">
+                            </div>
+                            <div class="discord-server-info">
+                                <span class="discord-server-name">E13 Services</span>
+                                <span class="discord-server-members">Join Discord Server</span>
+                            </div>
+                            <button class="discord-join-button">Join</button>
+                        </a>
+                    </div>
+
+                    <div class="spotify-embed">
+                        <iframe style="border-radius:12px" 
+                            src="https://open.spotify.com/embed/track/0sOTUNnrLiwEfjgPs1nnJS?utm_source=generator&theme=0" 
+                            width="100%" 
+                            height="80" 
+                            frameBorder="0" 
+                            allowfullscreen="" 
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://xoru.lol/" target="_blank" class="creator-attribution"><i class="fas fa-heart"></i> Made by xoru</a>
+    <script src="script.js"></script>
+</body>
+</html> 
